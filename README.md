@@ -99,3 +99,14 @@
 # Breadth Frist Search/Traversal
 
     - Keep reference of the child node in Queue.
+
+# Depth First Search/Traversal
+
+    - There are 3 ways to implement it.
+
+    // //     9
+    // //  4     20
+    // //1  6  15  170
+    - Inorder: [1, 4, 6, 9, 15, 20, 170]
+    - Preorder: [9, 4, 1, 6, 20, 15, 170] useful for recreating a tree.
+    - Postorder: [1, 6, 4, 15, 170, 20, 9]
