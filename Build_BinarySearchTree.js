@@ -235,6 +235,25 @@ class BinarySearchTree {
 		}
 		return list;
 	}
+
+	breadthFirstSearchRecursive(queue, list) {
+		// We cannot set queue and list in this method as this is recursive and set those over and over.
+		// So take these from the parameter.
+		if (!queue.length) {
+			return list;
+		}
+		let currentNode = queue.shift();
+		list.push(currentNode.value);
+
+		if (currentNode.left) {
+			queue.push(currentNode.left);
+		}
+		if (currentNode.right) {
+			queue.push(currentNode.right);
+		}
+
+		return this.breadthFirstSearchRecursive(queue, list);
+	}
 }
 
 const tree = new BinarySearchTree();
@@ -253,11 +272,15 @@ tree.insert(15);
 // console.log(tree);
 tree.insert(1);
 // console.log(tree);
-tree.lookup(9);
+// tree.lookup(9);
 // console.log(tree);
-tree.remove(170);
-console.log(tree);
-JSON.stringify(traverse(tree.root));
+// tree.remove(170);
+// console.log(tree);
+// JSON.stringify(traverse(tree.root));
+
+// tree.breadthFirstSearch();
+console.log(tree.breadthFirstSearch());
+console.log(tree.breadthFirstSearchRecursive([tree.root], []));
 
 // //     9
 // //  4     20
