@@ -85,7 +85,7 @@
     : BFS (DFS will take long)
 
     - If the tree is very wide
-    : DFS
+    : DFS (BFS will need too much memory)
 
     - If solution are frequent but located deep in the tree
     : DFS
@@ -95,3 +95,7 @@
 
     - Finding the shortest path
     : BFS
+
+# Breadth Frist Search/Traversal
+
+    - Keep reference of the child node in Queue.
