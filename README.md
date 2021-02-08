@@ -110,3 +110,13 @@
     - Inorder: [1, 4, 6, 9, 15, 20, 170]
     - Preorder: [9, 4, 1, 6, 20, 15, 170] useful for recreating a tree.
     - Postorder: [1, 6, 4, 15, 170, 20, 9]
+
+    - When to push the item in the list is the only difference.
+
+    - The height of the tree will tell us how much memory we'll need.
+    - The height of the tree will match the deepest recursive function.
+    - Memory consumption is O(height of the tree)
+
+## Difference btn BFS and DFS
+
+    - using Queue or Stack to save the reference.
