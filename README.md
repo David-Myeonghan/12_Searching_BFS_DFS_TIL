@@ -59,7 +59,7 @@
 ## BFS
 
     Good:
-    - Shortest Path
+    - Shortest Path (What are the most related items in Amazon?, Who are the closest friends on Facebook?)
     - Closer Nodes
 
     Bad:
@@ -71,7 +71,7 @@
 
     Good:
     - Less Memory
-    - Does Path Exist?
+    - Does Path Exist? Cheak to see if it exist.
 
     Bad:
     - Can get slow (if it is really deep)
@@ -107,9 +107,9 @@
     // //     9
     // //  4     20
     // //1  6  15  170
-    - Inorder: [1, 4, 6, 9, 15, 20, 170]
-    - Preorder: [9, 4, 1, 6, 20, 15, 170] useful for recreating a tree.
-    - Postorder: [1, 6, 4, 15, 170, 20, 9]
+    - Inorder (Left, Root, Right): [1, 4, 6, 9, 15, 20, 170]
+    - Preorder (Root, Left, Right): [9, 4, 1, 6, 20, 15, 170] useful for recreating a tree.
+    - Postorder (Left, Right, Root): [1, 6, 4, 15, 170, 20, 9]
 
     - When to push the item in the list is the only difference.
 
