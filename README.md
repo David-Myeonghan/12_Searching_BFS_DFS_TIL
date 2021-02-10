@@ -4,6 +4,7 @@
 
     - a method of finding a target value within the list.
     - It sequentially checks each element of the list for the target value until a match is found or until all the elements have been searched.
+    - O(n)
 
 ## Binary Search - Just like a phone book
 
@@ -60,10 +61,10 @@
 
     Good:
     - Shortest Path (What are the most related items in Amazon?, Who are the closest friends on Facebook?)
-    - Closer Nodes
+    - Closer Nodes. It is better when we know the node that we are looking for is close to us.
 
     Bad:
-    - More memory
+    - More memory to keep track of the parent nodes and the children nodes of that level.
 
     - If you have additional information on the location of the target node, and the node is likely in the upper level of a tree, or a graph, BFS is better.
 
@@ -120,3 +121,12 @@
 ## Difference btn BFS and DFS
 
     - using Queue or Stack to save the reference.
+
+## Shortest Path?
+
+    - DFS doesn't allow us to take into account the weights on edges between vertex(nodes)
+    - we therefore need to know those algorithms on a weighted graph.
+
+    - Bellman-Ford:     Effective at solving the shortest path because it can accommodate negative weights.
+                        Can take a long time to run in terms of time complexity. Average time complexity: O(n^2)
+    - Dijkstra: a bit faster and efficient.
